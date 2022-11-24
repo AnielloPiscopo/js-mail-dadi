@@ -61,9 +61,12 @@ btnRoll.addEventListener('click',function(){
     divContainer.append(userDiceNumberContainer);
     divContainer.append(pcDiceNumberContainer);
     divContainer.append(resultComment);
+
+    btnRefresh.addEventListener('click',function(){
+        divContainer.removeChild(pcDiceNumberContainer);
+        divContainer.removeChild(userDiceNumberContainer);
+        divContainer.removeChild(resultComment);
+    })
 })
 
 
-btnRefresh.addEventListener('click',function(){
-    divContainer.remove();
-})
