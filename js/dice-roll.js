@@ -6,8 +6,8 @@ GENERIC INITIALIZATION AND DECLARATION */
 // ? TAKING FROM THE DOM
 
 const diceRollSection = document.querySelector('#dice-roll');
-const btnRoll = document.querySelector('a.my-btn');
-const btnRefresh = document.querySelector('a.my-btn.d-none');
+const btnRoll = document.querySelector('#dice-roll .my-btn');
+const btnRefresh = document.querySelector('#dice-roll .my-btn.d-none');
 
 
 // ? CREATION OF HTML ELEMENTS
@@ -65,7 +65,4 @@ btnRoll.addEventListener('click',function(){
 
 btnRefresh.addEventListener('click',function(){
     divContainer.remove();
-    userDiceNumber.remove();
-    pcDiceNumber.remove();
-    resultComment.remove();
 })
