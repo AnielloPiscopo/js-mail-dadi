@@ -36,11 +36,11 @@ SPECIFIC STYLES */
 
 /* * MAIN */
 
-/* ? EMAIL VERIFICATION SECTION */
-#email-verification input.error{
+/* ? VERIFICATION EMAIL SECTION */
+#verification-email .my-input.error{
     border-color: var(--error-value-color);
 }
 
-#email-verification input.correct{
+#verification-email .my-input.correct{
     border-color: var(--correct-value-color);
 }
