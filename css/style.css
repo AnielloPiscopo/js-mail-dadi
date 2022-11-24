@@ -44,3 +44,11 @@ SPECIFIC STYLES */
 #verification-email .my-input.correct{
     border-color: var(--correct-value-color);
 }
+
+#verification-email p{
+    cursor: pointer;
+}
+
+#verification-email p:hover{
+    font-weight: bold;
+}
