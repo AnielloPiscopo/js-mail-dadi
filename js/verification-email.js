@@ -28,10 +28,23 @@ MAIN CODE */
 // ? EVENTS
 btnVerficationEmail.addEventListener('click' , function(){
     let email = emailInputArea.value;
-    let pElementVerficationEmail;
+    const pElementVerficationEmail = document.createElement('p');
 
 
     for(let i=0 ; i<validEmailsList.length ; i++){
-        console.log(validEmailsList[i]);
+        if(validEmailsList[i] !== email){
+            pElementVerficationEmail.innerHTML = 'EMAIL NON PRESENTE NELLA LISTA';
+        }
+        else{
+            pElementVerficationEmail.innerHTML = 'Email valida';
+        }
+
+
+        form.after(pElementVerficationEmail);
+
+
+        pElementVerficationEmail.addEventListener('click' , function(){
+            pElementVerficationEmail.remove();
+        })
     }
 })
