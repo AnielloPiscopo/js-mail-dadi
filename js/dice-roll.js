@@ -7,3 +7,5 @@ GENERIC INITIALIZATION AND DECLARATION */
 
 /* --------------------------------------------------------------------
 MAIN CODE */
+
+// * LINEAR PROGRAMM
