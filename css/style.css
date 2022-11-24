@@ -1,0 +1,37 @@
+/* *---------------------------------------------------------------------
+GENERIC STYLES */
+
+/* * UNIVERSAL SELECTOR */
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* * ROOT */
+:root{
+    --error-value-color:red;
+    --correct-value-color:green;
+}
+
+
+
+
+
+/* *---------------------------------------------------------------------
+SPECIFIC STYLES */
+
+/* * MAIN */
+
+/* ? EMAIL VERIFICATION SECTION */
+#email-verification input.error{
+    border-color: var(--error-value-color);
+}
+
+#email-verification input.correct{
+    border-color: var(--correct-value-color);
+}
