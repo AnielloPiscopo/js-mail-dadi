@@ -26,6 +26,7 @@ MAIN CODE */
 
 // * EVENTS
 btnRoll.addEventListener('click',function(){
+    btnRefresh.classList.remove('d-none');
     // ? INITIALIZATIONS AND DECLARATIONS
 
     // * Creating of HTML elements

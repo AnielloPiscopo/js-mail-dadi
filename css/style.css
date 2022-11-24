@@ -20,6 +20,15 @@ GENERIC STYLES */
 
 
 
+/*  * CLASSES */
+.my-btn:focus,
+.my-input:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+
+
 
 
 /* *---------------------------------------------------------------------
