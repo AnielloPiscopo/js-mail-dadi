@@ -29,12 +29,12 @@ MAIN CODE */
 btnVerficationEmail.addEventListener('click' , function(){
     let email = emailInputArea.value;
     const pElementVerficationEmail = document.createElement('p');
-    let correctEmailPosition = '';
+    let emailFound = false;
 
 
     for(let i=0 ; i<validEmailsList.length ; i++){
         if(validEmailsList[i] === email){
-            correctEmailPosition = validEmailsList.indexOf(email);
+            emailFound = true;
         }
 
 
@@ -43,7 +43,7 @@ btnVerficationEmail.addEventListener('click' , function(){
         })
     }
 
-    if(validEmailsList[correctEmailPosition] === email){
+    if(emailFound){
         pElementVerficationEmail.innerHTML = 'Email valida';
         emailInputArea.classList.add('correct');
         emailInputArea.classList.remove('error');
